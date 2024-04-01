@@ -1,0 +1,21 @@
+.forms{
+    width: 40vh;
+    margin: 15% 0% 0% 40%;
+    height: 40vh;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: rgb(70, 81, 70);
+    text-align: center;
+}
+.input1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+.inputbutton{
+    margin-top: 5px;
+    padding: 10px;
+    height: 2px;
+    
+    
+}
