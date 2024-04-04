@@ -1,12 +1,14 @@
 .formsCadastro{
    display: flex;
-   background-color: rgb(70, 81, 70);
+   justify-content: center;
+   background-color: rgb(108, 112, 108);
    justify-content: center;
    margin-left: 20%;
    margin-right: 20%;
-   margin-top: 20%;
+   margin-top: 15%;
    font-size: 20px;
-   
+   box-shadow: 5px 10px black;
+   border: 2px solid black;
 }
 #cadastro{
     margin-top: 30px;
@@ -14,4 +16,46 @@
 h1{
     display: flex;
     justify-content: center;
+}
+.boxfixing{
+    margin: 20px;
+}
+.btns{
+    margin-top: 20px;
+}
+#btneditar{
+    background-color: blue;
+    font-size: 20px;
+}
+#btnSalvar{
+    background-color: green;
+    font-size: 20px;
+}
+#btnCancelar{
+    background-color: red;
+    font-size: 20px;
+}
+.input1{
+    padding:10px;
+}
+.input3{
+    padding:10px;
+}
+.input3{
+    padding:10px;
+}
+#selectInput{
+    width: 200px;
+}
+#nameInput{
+    width: 200px;
+}
+#quantInput{
+    width: 200px;
+}
+#descriptionInput{
+    width: 200px;
+}
+#valueInput{
+    width: 200px;
 }

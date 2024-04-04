@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="login.css">
 
-
 <body>
     
 
@@ -16,7 +15,7 @@
             <input type="password" name="pass" placeholder="Senha">
         </div>
         <div class="inputbutton">
-            <input type="button" value="Login">
+            <input id="buttonColor" type="button" value="Login">
         </div>
     </form>
 </div>

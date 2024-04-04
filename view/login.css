@@ -6,16 +6,19 @@
     border-radius: 20px;
     background-color: rgb(70, 81, 70);
     text-align: center;
+    box-shadow: 5px 10px black;
 }
 .input1{
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     
 }
 .inputbutton{
     margin-top: 5px;
     padding: 10px;
-    height: 2px;
+    height: 20px;
     
-    
+}
+#buttonColor{
+    color: green;
 }
