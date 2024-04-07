@@ -14,6 +14,6 @@ class Acao {
 
     public function executar(){
         $obj = new $this->class();
-        $obj->{$this->metodo};
+        $obj->{$this->metodo}();
     }
 }

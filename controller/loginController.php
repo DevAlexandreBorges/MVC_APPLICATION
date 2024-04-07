@@ -4,7 +4,7 @@ namespace controller;
 
 use view\loginView;
 
-class Controller {
+class LoginController {
 
     public function login(){
         $view = new loginView();

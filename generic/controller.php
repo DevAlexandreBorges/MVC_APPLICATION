@@ -10,7 +10,7 @@ class Controller {
     private function __construct()
     {
         $this->arrayRotas = [
-            "login" => new acao("controller/loginController.php","login"),
+            "login" => new Acao("controller\loginController","login"),
         ];
     }
 
