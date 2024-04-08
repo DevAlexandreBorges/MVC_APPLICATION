@@ -10,7 +10,7 @@ class ProdutoController {
     public function listarProdutos(){
         //Verificar se está logado
         if(!LoginController::logued()){
-            header("location: ../");
+            header("location: ./");
         }
 
         $view = new ProdutosView();

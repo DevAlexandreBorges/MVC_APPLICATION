@@ -14,6 +14,7 @@ class Controller {
             "loginProcess" => new Acao("controller\loginController", "validarLogin"),
             "logout" => new Acao("controller\loginController", "logout"),
             "produtos" => new Acao("controller\produtoController", "listarProdutos"),
+            "produtos/" => new Acao("controller\\routeController", "normalizeRoute"),
             "produtos/lista" => new Acao("controller\produtoController", "listarProdutos"),
             "produtos/cadastrar" => new Acao("controller\produtoController", "cadastrarProduto")
         ];

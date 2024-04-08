@@ -41,7 +41,7 @@ class LoginController {
 
 
     public function login(){
-        if(LoginController::sessionLogout()){
+        if(LoginController::logued()){
             header("location: produtos/lista");
             return;
         }
