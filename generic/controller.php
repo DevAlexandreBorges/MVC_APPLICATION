@@ -11,6 +11,11 @@ class Controller {
     {
         $this->arrayRotas = [
             "login" => new Acao("controller\loginController","login"),
+            "loginProcess" => new Acao("controller\loginController", "validarLogin"),
+            "logout" => new Acao("controller\loginController", "logout"),
+            "produtos" => new Acao("controller\produtoController", "listarProdutos"),
+            "produtos/lista" => new Acao("controller\produtoController", "listarProdutos"),
+            "produtos/cadastrar" => new Acao("controller\produtoController", "cadastrarProduto")
         ];
     }
 
@@ -26,7 +31,9 @@ class Controller {
             $this->arrayRotas[$rota]->executar();
             return;
         }
-        //chamar tela 404...
+        
+        //Não existe
+        include "public/404.html";
     }
 
 

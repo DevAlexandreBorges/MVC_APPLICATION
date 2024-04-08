@@ -5,11 +5,11 @@ namespace generic;
 class View {
 
     private function cabecalho(){
-        //Chamar cabeçalho...
+        include "public/cabecalho.php";
     }
 
     private function rodape(){
-        //Chamar rodapé...
+        include "public/rodape.php";
     }
 
     public function conteudo($caminho, $param = array()){
