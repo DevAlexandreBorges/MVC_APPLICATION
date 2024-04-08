@@ -1,9 +1,13 @@
+<?php
+
+use controller\RouteController;
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/style.css">
+    <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/cadastro.css">
 </head>
 
 

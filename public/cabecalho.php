@@ -3,9 +3,9 @@
 use controller\RouteController;
 ?>
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/style.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -13,5 +13,6 @@ use controller\RouteController;
         <img >
         <ul>
             <a href="<?= RouteController::RootRoute()?>/produtos/lista">Lista</a>
+            <a href="<?= RouteController::RootRoute()?>/logout">Sair</a>
         </ul>
     </nav>
