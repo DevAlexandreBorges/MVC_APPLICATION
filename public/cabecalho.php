@@ -1,3 +1,7 @@
+<?php
+
+use controller\RouteController;
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -5,6 +9,9 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <div>
-        
-    </div>
+    <nav>
+        <img >
+        <ul>
+            <a href="<?= RouteController::RootRoute()?>/produtos/lista">Lista</a>
+        </ul>
+    </nav>
