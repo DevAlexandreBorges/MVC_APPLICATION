@@ -12,7 +12,7 @@ use controller\RouteController;
     <nav>
         <img >
         <ul>
-            <a href="<?= RouteController::RootRoute()?>/produtos/lista">Lista</a>
+            <a href="<?= RouteController::RootRoute()?>/produtos/lista">Lista de produtos</a>
             <a href="<?= RouteController::RootRoute()?>/logout">Sair</a>
         </ul>
     </nav>

@@ -4,6 +4,10 @@ namespace controller;
 
 class RouteController {
 
+    public function pageUp(){
+        echo "<script>history.back();</script>";
+    }
+
     public function redirectUp(){
         header("Location: ../");
     }

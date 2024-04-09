@@ -11,4 +11,11 @@ class ProdutoService extends ProdutoDAO{
         return $retorno;
     }
 
+    public function getProduto($id){
+        
+    }
+
+    public function salvarNovoProduto($nome, $descricao, $quantidade, $preco, $categoria){
+        parent::salvarNovoProduto($nome, $descricao, $quantidade, $preco, $categoria);
+    }
 }

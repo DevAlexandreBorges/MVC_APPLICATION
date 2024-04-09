@@ -10,6 +10,7 @@ use controller\RouteController;
 </head>
 
 <div id="">
+    <a href="<?= RouteController::RootRoute(); ?>/produtos/cadastrar">Cadastrar</a>
     <table>
         <thead>
             <th>ID</th>
@@ -18,13 +19,15 @@ use controller\RouteController;
             <th>Quantidade</th>
             <th>Preço</th>
             <th>Categoria</th>
+            <th></th>
+            <th></th>
         </thead>
         <tbody>
             <?php
                if(sizeof($param["listaProdutos"]) == 0){
             ?>
                 <tr>
-                    <td colspan="6">Sem produtos cadastrados!</td>
+                    <td colspan="8">Sem produtos cadastrados!</td>
                 </tr>
             <?php
                }else{
@@ -37,6 +40,8 @@ use controller\RouteController;
                     <td><?= $v['quantidade'] ?></td>
                     <td><?= $v['preco'] ?></td>
                     <td><?= $v['categoria'] ?></td>
+                    <td><a href="<?= RouteController::RootRoute(); ?>/produtos/editar?id=<?= $v['id'] ?>">Editar</a></td>
+                    <td><a href="<?= RouteController::RootRoute(); ?>/produtos/excluir?id=<?= $v['id'] ?>">Excluir</a></td>
                 </tr>
             <?php 
                 }
