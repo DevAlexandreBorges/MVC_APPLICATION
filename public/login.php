@@ -10,6 +10,7 @@ use controller\RouteController;
     <title>Login</title>
     <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/style.css">
     <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/login.css">
+    <script src="<?= RouteController::RootRoute(); ?>/public/msgBox.js"></script>
 </head>
 
 <body>
@@ -29,4 +30,35 @@ use controller\RouteController;
     </form>
 </div>
 </body>
+
+<?php
+//Menssagens
+if (isset($_GET['error']) && $_GET['error'] == "") {
+    echo "<script>
+        window.onload = function(){ 
+            var msgErro = new MsgBox();
+            msgErro.showInLine({_idName: 'msgError', _type: msgErro.SET_TYPE_TEXT('" . substr(RouteController::RootRoute(), 1) . "'), _menssagem: 'Ocorreu um erro não indentificdo.<br>Se o problema persistir, contacte um adminstrador do sistema.', _title: 'Erro', _btnOkName: 'Ok', _btnFecharView: false});
+        }
+        </script>";
+}
+
+if (isset($_GET['error']) && $_GET['error'] == ERROR_INVALIDLOGIN) {
+    echo "<script>
+        window.onload = function(){ 
+            var msgLoginIncorrect = new MsgBox();
+            msgLoginIncorrect.showInLine({_idName: 'msgLI', _type: msgLoginIncorrect.SET_TYPE_TEXT('" . substr(RouteController::RootRoute(), 1) . "'), _menssagem: 'Nome de usuário ou senha incorretos!', _title: 'Login inválido!', _btnOkName: 'Ok', _onCloseAction: 'window.location.href = \"".RouteController::RootRoute()."/\";', _btnFecharView: false});
+        }
+        </script>";
+}
+
+if (isset($_GET['error']) && $_GET['error'] == ERROR_CONNECT_DB) {
+    echo "<script>
+        window.onload = function(){ 
+            var msgErrorDb = new MsgBox();
+            msgErrorDb.showInLine({_idName: 'msgErrDb', _type: msgErrorDb.SET_TYPE_TEXT('" . substr(RouteController::RootRoute(), 1) . "'), _menssagem: 'Ocorreu um erro na comunicação com o banco de dados!<br><br>Se o problema persistir contacte um administrador.', _title: 'Falha ao se comunicar com o banco', _btnOkName: 'Ok', _onCloseAction: 'window.location.href = \"".RouteController::RootRoute()."/\";', _btnFecharView: false});
+        }
+        </script>";
+}
+?>
+
 </html>

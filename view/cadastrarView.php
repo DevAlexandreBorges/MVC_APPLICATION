@@ -13,10 +13,10 @@ class CadastrarView extends View {
         $this->conteudo("public/cadastro.php",$param);
     }
 
-    public function editarProduto($id){
+    public function editarProduto($produto = array()){
         $param = array(
             "type" => 2,
-            "id" => $id
+            "produto" => $produto
         );
         $this->conteudo("public/cadastro.php",$param);
     }

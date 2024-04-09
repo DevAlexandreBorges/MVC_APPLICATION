@@ -1,3 +1,5 @@
+//let msgExcluir = new MsgBox();
+//msgExcluir.showInLine({_idName: 'msgDelete', _type: msgExcluir.SET_TYPE_TEXT('root'), _menssagem: 'Excluir definitivamente?', _title: 'Excluir?', _btnOkName: 'Sim', _btnOkHref: '', _btnCancelName: 'Cancelar',  _onCloseAction: 'window.location.href = ;', _btnFecharView: false});
 //Caixas de menssagens (modal)
 class MsgBox{
     constructor(){
@@ -10,8 +12,8 @@ class MsgBox{
     static BTN_Background = 4;
     
     //Tipos de Entrada/Saida
-    SET_TYPE_TEXT = (rootRoute)=>{this.#input = false; this.type = rootRoute +"/public/msg/msg.html"};;
-    SET_TYPE_INPUT = (rootRoute)=>{this.#input = true; this.type = rootRoute+ "/public/msg/msg.html"};
+    async SET_TYPE_TEXT(rootRoute) {await(this.#input = false); await(this.type = "/"+rootRoute +"/public/msg/msg.html.php");};
+    SET_TYPE_INPUT(rootRoute) {await(this.#input = true); await(this.type = "/"+rootRoute +"/public/msg/msg.html.php");};
     SET_TYPE_HTML = (URL)=>{return URL};
     SET_TYPE_TEXTHTML = "";
 
@@ -137,11 +139,7 @@ class MsgBox{
         this.inputPlaceholder = _inputPlaceholder;
         this.inputPassword = _inputPassword;
         this.title = _title;
-        try{
-            await _type();
-        }catch{
-            throw "Prorpriedade inválida.";
-        }
+        
         this.autoDestroy = _autoDestroy;
         this.backgroudClose = _backgroudClose;
         //BtnOK

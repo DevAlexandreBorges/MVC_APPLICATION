@@ -19,6 +19,8 @@ class Controller {
             "produtos/cadastrar" => new Acao("controller\produtoController", "cadastrarProduto"),
             "produtos/cadastrar/salvar" => new Acao("controller\produtoController", "salvarNovoProduto"),
             "produtos/editar" => new Acao("controller\produtoController", "editarProduto"),
+            "produtos/editar/salvar" => new Acao("controller\produtoController", "salvarEdicaoProduto"),
+            "produtos/excluir" => new Acao("controller\produtoController", "excluirProduto")
         ];
     }
 

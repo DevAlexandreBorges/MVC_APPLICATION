@@ -71,8 +71,9 @@
     flex-direction: column;
 }
 .modal{
-    min-width: 40%;
-    min-height: 200px;
+    all: unset;
+    min-width: 30%;
+    min-height: 150px;
     max-width: 60%;
     max-height: 60%;
     background-color: #ffffff96 ;
@@ -123,6 +124,12 @@
     cursor: pointer;
    
 }
+
+.btnsDiv{
+    display: flex;
+    justify-content: end;
+}
+
 .msgCancelButton, #btnCancel #btnCancel{
     all: unset;
     background-color: white;
@@ -131,14 +138,17 @@
     cursor: pointer;
 }
 .msgTitle{
+    justify-content: unset !important;
     height: 47px;
-    background-color: unset;
+    background-color: unset  !important;
     text-decoration: none;
     margin-left: 0;
     overflow: hidden;
     white-space: nowrap;
+    text-align: start  !important; 
 }   
 .msgMenssage{
+    justify-content: unset;
     min-width: 100%;
     min-height: 50px;
     max-width: 100%;
@@ -148,6 +158,7 @@
     overflow-wrap: break-word;
 }
 .msgInput{
+    all: unset;
     display: flex; 
     align-items: center; 
     white-space: nowrap;

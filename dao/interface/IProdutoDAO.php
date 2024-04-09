@@ -10,4 +10,8 @@ interface IProdutoDAO {
 
     public function salvarNovoProduto($nome, $descricao, $quantidade, $preco, $categoria);
 
+    public function salvarEdicaoProduto($id, $nome, $descricao, $quantidade, $preco, $categoria);
+
+    public function excluirProduto($id);
+
 }

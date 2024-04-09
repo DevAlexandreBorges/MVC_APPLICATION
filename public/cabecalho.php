@@ -6,6 +6,7 @@ use controller\RouteController;
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/style.css">
+    <script src="<?= RouteController::RootRoute(); ?>/public/msgBox.js"></script>
 </head>
 <body>
     <!-- Cabeçalho -->
