@@ -8,6 +8,8 @@ use controller\RouteController;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/bootstrap/css/bootstrap.css">
+    <script src="<?= RouteController::RootRoute(); ?>/public/msgBox.js"></script>
     <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/style.css">
     <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/login.css">
     <script src="<?= RouteController::RootRoute(); ?>/public/msgBox.js"></script>

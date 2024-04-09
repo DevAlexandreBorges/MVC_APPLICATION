@@ -9,7 +9,7 @@ $raiz = substr($raiz, 0, (strlen($raiz) - strlen("public/msg/msg.html.php"))-1 )
 </head>
 <body>
     <!-- Apenas para teste, deve comentar a linha de export do javascript pra funcionar na pagina original-->
-    <!-- <div onclick="abrir()" class="btn">OK</div> -->
+    <!-- <div onclick="abrir()" class="btnMsg">OK</div> -->
     <div class="janela-modal" id="janela-modal">
         <div class="modal">
             <button class="fechar" id="fechar">X</button>

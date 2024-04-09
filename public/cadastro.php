@@ -57,18 +57,18 @@ $categoria = ($param["type"] == 2) ?  $param["produto"][0]["categoria"] : ((isse
                 <?php
                 if ($param["type"] == 1) {
                 ?>
-                    <input id="btnSalvar" type="submit" value="Salvar">
+                    <input class="btn btn-light" id="btnSalvar" type="submit" value="Salvar">
                 <?php
                 }
                 ?>
                 <?php
                 if ($param["type"] == 2) {
                 ?>
-                    <input id="btnEditar" type="submit" value="Editar">
+                    <input class="btn btn-light" id="btnEditar" type="submit" value="Editar">
                 <?php
                 }
                 ?>
-                <a id="btnCancelar" href="<?= RouteController::RootRoute(); ?>/produtos/lista">Cancelar</a>
+                <a class="btn btn-light" id="btnCancelar" href="<?= RouteController::RootRoute(); ?>/produtos/lista">Cancelar</a>
             </div>
         </div>
     </form>

@@ -34,7 +34,7 @@
 .disableScroll{
     overflow: hidden !important;
 } 
-.btn{
+.btnMsg{
     padding: 25px 60px;
     display: inline;
     background-color: tomato;
@@ -49,7 +49,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-.btn:hover{
+.btnMsg:hover{
     background-color: #ff4c2c;
 }
 .menssageGroup{

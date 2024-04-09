@@ -8,3 +8,27 @@ body{
     width: 100%;
 }
 
+.menu {
+    background-color: #262633 !important;
+    
+}
+
+.menu-logo {
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    max-height: 55px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.margin-left {
+    margin-left: 2%;
+}
+
+.margin-right {
+    margin-right: 2%;
+}

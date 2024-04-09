@@ -10,18 +10,18 @@ use controller\RouteController;
     <link rel="stylesheet" href="<?= RouteController::RootRoute(); ?>/public/style.css">
 </head>
 
-<div id="">
-    <a href="<?= RouteController::RootRoute(); ?>/produtos/cadastrar">Cadastrar</a>
-    <table>
-        <thead>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th>Preço</th>
-            <th>Categoria</th>
-            <th></th>
-            <th></th>
+<div id="" class="margin-top margin-left margin-right">
+    <a class="btn btn-dark" href="<?= RouteController::RootRoute(); ?>/produtos/cadastrar">Cadastrar</a>
+    <table class="table margin-top">
+        <thead class="thead-dark">
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Categoria</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </thead>
         <tbody>
             <?php
@@ -47,8 +47,8 @@ use controller\RouteController;
                         <td><?= $v['quantidade'] ?></td>
                         <td><?= $v['preco'] ?></td>
                         <td><?= $v['categoria'] ?></td>
-                        <td><a href="<?= RouteController::RootRoute(); ?>/produtos/editar?id=<?= $v['id'] ?>">Editar</a></td>
-                        <td><a onclick="msgExcluir('<?= $v['id'] ?>', '<?= $v['nome'] ?>');">Excluir</a></td>
+                        <td style="max-width: 40px;"><a class="btn btn-outline-primary" href="<?= RouteController::RootRoute(); ?>/produtos/editar?id=<?= $v['id'] ?>">Editar</a></td>
+                        <td style="max-width: 50px; padding-right: 20px;"><a class="btn btn-outline-danger" onclick="msgExcluir('<?= $v['id'] ?>', '<?= $v['nome'] ?>');">Excluir</a></td>
                     </tr>
             <?php
                 }
